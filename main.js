@@ -8,15 +8,15 @@
 // 3 è dispari
 // 4 è pari   ecc ecc
 
-let N = prompt("inserire un numero intero:")
+// let N = prompt("inserire un numero intero:")
 
-for(let i = 1; i <= N; i++){
-    if(i%2 == 0 ){
-        console.log( `${i} è pari`)
-    } else{
-        console.log( `${i} è dispari`)
-    }
-}
+// for(let i = 1; i <= N; i++){
+//     if(i%2 == 0 ){
+//         console.log( `${i} è pari`)
+//     } else{
+//         console.log( `${i} è dispari`)
+//     }
+// }
 
 
 // ESERCIZIO 2 :
@@ -24,15 +24,15 @@ for(let i = 1; i <= N; i++){
 // Stampi tutti i numeri da 1 a N.
 // Per ogni numero, segnali se si tratta di un multiplo di 3 con un messaggio speciale (ad esempio: “è multiplo di 3”)
 
-let N = prompt("inserire un numero intero:")
+// let N = prompt("inserire un numero intero:")
 
-for(let i = 1; i <= N; i++){
-    if(i%3 == 0 ){
-        console.log( `${i} è multiplo di 3`)
-    } else{
-        console.log( `${i}`)
-    }
-}
+// for(let i = 1; i <= N; i++){
+//     if(i%3 == 0 ){
+//         console.log( `${i} è multiplo di 3`)
+//     } else{
+//         console.log( `${i}`)
+//     }
+// }
 
 
 
@@ -40,6 +40,32 @@ for(let i = 1; i <= N; i++){
 // Simulate una sala giochi , dove 2 utenti si devono sfidare ad una sfida di dadi , 
 // alla fine dovere decretare il vincitore della sfida oppure se la sfida finisce in parita'. 
 
+let utente1 = 0;
+let utente2 = 0;
+
+
+
+for(let i = 1; i <= 1; i++){
+   
+    utente1 = Math.floor(Math.random() * (6 - 1 + 1) + 1); 
+        console.log(`punteggio giocatore 1: ${utente1}`)
+}
+
+for(let i = 1; i <= 1; i++){
+   
+    utente2 = Math.floor(Math.random() * (6 - 1 + 1) + 1); 
+        console.log(`punteggio giocatore 2: ${utente2}`)
+}
+
+if(utente1 < utente2){
+    console.log("utente 2 ha vinto")
+
+}else if(utente2 < utente1){
+    console.log("utente 1 ha vinto")
+    
+}else if(utente2 = utente1){
+    console.log("parita'")
+}
 
 
 // ESERCIZIO DA COLLOQUIO TECNICO :
