@@ -11,7 +11,7 @@
 let N = prompt("inserire un numero intero:")
 
 for(let i = 1; i <= N; i++){
-    if( ( i%2) == 0 ){
+    if(i%2 == 0 ){
         console.log( `${i} è pari`)
     } else{
         console.log( `${i} è dispari`)
@@ -24,9 +24,23 @@ for(let i = 1; i <= N; i++){
 // Stampi tutti i numeri da 1 a N.
 // Per ogni numero, segnali se si tratta di un multiplo di 3 con un messaggio speciale (ad esempio: “è multiplo di 3”)
 
+let N = prompt("inserire un numero intero:")
+
+for(let i = 1; i <= N; i++){
+    if(i%3 == 0 ){
+        console.log( `${i} è multiplo di 3`)
+    } else{
+        console.log( `${i}`)
+    }
+}
+
+
+
 // ESERCIZIO 3 :
 // Simulate una sala giochi , dove 2 utenti si devono sfidare ad una sfida di dadi , 
 // alla fine dovere decretare il vincitore della sfida oppure se la sfida finisce in parita'. 
+
+
 
 // ESERCIZIO DA COLLOQUIO TECNICO :
 // Scrivere un programma che permetta di stampare in console tutti i numeri da 1 a N: 
