@@ -40,32 +40,32 @@
 // Simulate una sala giochi , dove 2 utenti si devono sfidare ad una sfida di dadi , 
 // alla fine dovere decretare il vincitore della sfida oppure se la sfida finisce in parita'. 
 
-let utente1 = 0;
-let utente2 = 0;
+// let utente1 = 0;
+// let utente2 = 0;
 
 
 
-for(let i = 1; i <= 1; i++){
+// for(let i = 1; i <= 1; i++){
    
-    utente1 = Math.floor(Math.random() * (6 - 1 + 1) + 1); 
-        console.log(`punteggio giocatore 1: ${utente1}`)
-}
+//     utente1 = Math.floor(Math.random() * (6 - 1 + 1) + 1); 
+//         console.log(`punteggio giocatore 1: ${utente1}`)
+// }
 
-for(let i = 1; i <= 1; i++){
+// for(let i = 1; i <= 1; i++){
    
-    utente2 = Math.floor(Math.random() * (6 - 1 + 1) + 1); 
-        console.log(`punteggio giocatore 2: ${utente2}`)
-}
+//     utente2 = Math.floor(Math.random() * (6 - 1 + 1) + 1); 
+//         console.log(`punteggio giocatore 2: ${utente2}`)
+// }
 
-if(utente1 < utente2){
-    console.log("utente 2 ha vinto")
+// if(utente1 < utente2){
+//     console.log("utente 2 ha vinto")
 
-}else if(utente2 < utente1){
-    console.log("utente 1 ha vinto")
-    
-}else if(utente2 = utente1){
-    console.log("parita'")
-}
+// }else if(utente2 < utente1){
+//     console.log("utente 1 ha vinto")
+
+// }else if(utente2 = utente1){
+//     console.log("parita'")
+// }
 
 
 // ESERCIZIO DA COLLOQUIO TECNICO :
@@ -75,5 +75,22 @@ if(utente1 < utente2){
 // - tutti i numeri multipli di 5 siano sostituiti dalla stringa 'Buzz'
 // - e tutti i numeri multipli di 15 siano sostituiti dalla stringa 'fizzBuzz'
 
+let n = 17;
 
+
+for(let i = 1; i <= n; i++){
+
+if(i%15 == 0 ){
+     console.log( `fizzBuzz`);
+
+} else if(i%5 == 0 ){
+     console.log( `Buzz`);
+
+} else if(i%3 == 0 ){
+    console.log( `Fizz`);
+
+} else{
+     console.log( i);
+}
+}
 
